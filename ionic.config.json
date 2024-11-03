@@ -1,0 +1,7 @@
+{
+  "name": "magher",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
