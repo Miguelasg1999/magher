@@ -18,7 +18,7 @@ export class LoginComponent  implements OnInit {
 
   async login(){
     try{
-      this.authService.login(this.email, this.password);
+      await this.authService.login(this.email, this.password);
       alert("Inicio de sesión correcto");
       this.router.navigate(["/inicio"]);
     }catch(error){
@@ -28,7 +28,7 @@ export class LoginComponent  implements OnInit {
 
   async register(){
     try{
-      this.authService.register(this.email, this.password);
+      await this.authService.register(this.email, this.password);
       alert("Registrado correctamente" + this.email);
     }catch(error){
       alert("Error al registrarse" + error);

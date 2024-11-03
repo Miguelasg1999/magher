@@ -1,3 +1,18 @@
-<p>
-  login works!
-</p>
+<form (ngSubmit)="login()">
+  <ion-item>
+    <ion-label position="floating">Correo electrónico:</ion-label>
+    <ion-input type="email" name="email" placeholder="correo" [(ngModel)]="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Contraseña:</ion-label>
+    <ion-input type="password" name="password" placeholder="contraseña" [(ngModel)]="password"></ion-input>
+  </ion-item>
+  <br>
+
+  <ion-button type="submit" expand="full" color="success">Ingresar</ion-button>
+</form>
+
+<br><br>
+
+<ion-button (click)="register()" expand="full" color="danger">Registrar</ion-button>
