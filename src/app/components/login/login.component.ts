@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../../services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -7,8 +9,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent  implements OnInit {
 
-  constructor() { }
+  email:string = "";
+  password:string = "";
+
+  constructor(private authService: AuthService, private router: Router) { }
 
   ngOnInit() {}
+
+  async login(){
+    try{
+      this.authService.login(this.email, this.password);
+      alert("Inicio de sesión correcto");
+      this.router.navigate(["/inicio"]);
+    }catch(error){
+      alert("Error al iniciar sesión" + error);
+    }
+  }
+
+  async register(){
+    try{
+      this.authService.register(this.email, this.password);
+      alert("Registrado correctamente" + this.email);
+    }catch(error){
+      alert("Error al registrarse" + error);
+    }
+  }
 
 }
