@@ -13,13 +13,15 @@ export class AuthService {
   }
 
   async register(email:string, password:string){
-    return this.afAuth.createUserWithEmailAndPassword(email, password)
+    return this.afAuth.createUserWithEmailAndPassword(email, password);
   }
 
   async logout(){
     this.afAuth.signOut();
   }
 
-  getUser(){}
+  getUser(){
+    return this.afAuth.user;
+  }
 
 }
