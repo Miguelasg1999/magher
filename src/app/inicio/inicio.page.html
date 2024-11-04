@@ -1,0 +1,61 @@
+<ion-header [translucent]="true">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <ion-toolbar id="head">
+      <ion-title routerLink="/inicio" style="color: white;">
+        MAGHER
+      </ion-title>
+      <ion-button slot="end" fill="clear" routerLink="/home">Iniciar sesión</ion-button> 
+      <ion-button slot="end" fill="clear" routerLink="/registro">Registrarse</ion-button>
+      <ion-button slot="end" fill="clear" routerLink="/producto">Productos</ion-button>
+    </ion-toolbar>
+  </ion-header>
+    
+    
+    <ion-content class="blnk"  [fullscreen]="true">
+      <div class="fondo">
+      <ion-header id="center" collapse="condense">
+        <ion-toolbar>
+          <ion-title size="large">Blank</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      
+      <br>
+      <div id="top" class="title">
+        <h3>Panadería y Pastelería MAGHER</h3>
+      </div>
+      <br>
+      <div>
+        <h3 id="sub" class="title2">Tradición, experiencia y calidad por mas de 30 años</h3>
+      </div>
+    
+      <!--<swiper
+      (slideChange)="swiperSlideChanged($event)"
+      [loop]="true"
+      [pagination]="true">
+        <ng-template swiperSlide *ngFor="let image of images">
+          <img class="img1" [src]="image">
+        </ng-template>
+        <ng-template swiperSlide>Slide 2</ng-template>
+        <ng-template swiperSlide>Slide 3</ng-template>
+      </swiper>-->
+    
+      <h4 class="title3" style="color: white;">Somos proveedores lokasosc aa experienciados de panadería, pastelería y pedidos especiales, nuestros productos a continuación:</h4>
+      <div class="box">
+      <ul class="cent">
+        <li>Diversidad en pan</li>
+        <li>Tortas</li>
+        <li>Kuchen</li>
+        <li>Pie de limon</li>
+        <li>Canapés</li>
+        <li>Empanadas</li>
+      </ul>
+    </div>
+      
+    </div>
+    
+    
+    
+    
+    </ion-content>
