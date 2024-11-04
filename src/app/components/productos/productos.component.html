@@ -1,18 +1,18 @@
 <form (ngSubmit)="addProducto()">
-  <ion-item>
+  <ion-item class="dark">
     <ion-input name="nombre" placeholder="Nombre producto" [(ngModel)]="producto.nombre" required></ion-input>
   </ion-item>
 
-  <ion-item>
+  <ion-item class="dark">
     <ion-input name="descripcion" placeholder="Descripción" [(ngModel)]="producto.descripcion"></ion-input>
   </ion-item>
 
-  <ion-item>
+  <ion-item class="dark">
     <ion-label position="floating">Precio</ion-label>
     <ion-input type="number" name="precio" placeholder="Precio" [(ngModel)]="producto.precio"></ion-input>
   </ion-item>
 
-  <ion-item>
+  <ion-item class="dark">
     <ion-input name="imageUrl" placeholder="URL imagen" [(ngModel)]="producto.imageUrl"></ion-input>
   </ion-item>
   <br>
