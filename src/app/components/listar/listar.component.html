@@ -1,3 +1,16 @@
-<p>
-  listar works!
-</p>
+<ion-list>
+  <ion-item *ngFor="let producto of productos">
+    <ion-card class="center">
+      <img alt="Silhouette of mountains" src={{producto.imageUrl}}/>
+      <ion-card-header>
+        <ion-card-title>{{producto.nombre}}</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        {{producto.descripcion}}
+      </ion-card-content>
+
+      <ion-card-content>$ {{producto.precio}}</ion-card-content>
+    </ion-card>
+  </ion-item>
+</ion-list>

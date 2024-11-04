@@ -1,13 +1,19 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>listar_productos</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">listar_productos</ion-title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <ion-toolbar id="head">
+      <ion-title routerLink="/inicio" style="color: white;">
+        MAGHER
+      </ion-title>
+      <ion-button slot="end" fill="clear" routerLink="/home">Iniciar sesión</ion-button> 
+      <ion-button slot="end" fill="clear" routerLink="/registro">Registrarse</ion-button>
+      <ion-button slot="end" fill="clear" routerLink="/listar-productos">Productos</ion-button>
+      <ion-button slot="end" fill="clear" routerLink="/producto">Agregar productos</ion-button>
+      <ion-button (click)="logout()" slot="end" fill="clear" routerLink="/producto">Cerrar sesión</ion-button>
     </ion-toolbar>
   </ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-listar></app-listar>
 </ion-content>
