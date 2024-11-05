@@ -1,7 +1,7 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
-import Swiper from 'swiper';
+//import Swiper from 'swiper';
 
 @Component({
   selector: 'app-inicio',
@@ -9,9 +9,9 @@ import Swiper from 'swiper';
   styleUrls: ['./inicio.page.scss'],
 })
 export class InicioPage implements OnInit {
-  @ViewChild('swiper')
+  /*@ViewChild('swiper')
   swiperRef: ElementRef | undefined;
-  swiper?: Swiper;
+  swiper?: Swiper;*/
 
   images = [
     'https://images.crowdspring.com/blog/wp-content/uploads/2023/05/16174534/bakery-hero.png',

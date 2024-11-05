@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { InicioPageRoutingModule } from './inicio-routing.module';
 import { InicioPage } from './inicio.page';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { MapaComponent } from '../components/mapa/mapa.component';
 
 @NgModule({
   imports: [
@@ -15,7 +16,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     IonicModule,
     InicioPageRoutingModule
   ],
-  declarations: [InicioPage],
+  declarations: [InicioPage, MapaComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class InicioPageModule {}
