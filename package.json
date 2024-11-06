@@ -28,6 +28,7 @@
     "@capacitor/haptics": "6.0.1",
     "@capacitor/keyboard": "6.0.2",
     "@capacitor/status-bar": "6.0.1",
+    "@googlemaps/js-api-loader": "^1.16.8",
     "@ionic/angular": "^8.0.0",
     "firebase": "^10.14.1",
     "ionicons": "^7.0.0",
