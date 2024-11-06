@@ -15,8 +15,8 @@ export class InicioPage implements OnInit {
   swiper?: Swiper;*/
 
   map: google.maps.Map | undefined;  // Definimos la variable del mapa
-  lat: number = 40.730610;  // Latitud de ejemplo (Nueva York)
-  lng: number = -73.935242; // Longitud de ejemplo (Nueva York)
+  lat: number = -38.76368335586436;  // Latitud de ejemplo (Nueva York)
+  lng: number = -72.60441911789803; // Longitud de ejemplo (Nueva York)
 
 
   images = [
