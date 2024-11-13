@@ -27,7 +27,7 @@
 }
 
 .fondo{
-  background:#3c59e7;
+  background:#031b5c;
   width: 100%;
   margin: auto;
   height: 100%;
@@ -39,9 +39,15 @@
   background: white;
 }
 
+.extra{
+  width: 100%;
+  padding: 10px;
+  --background: #030b38;
+}
+
 
 #head{
-  --background:#0722a7;
+  --background:#000000;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -133,6 +139,15 @@ ul li{
   margin-top: 10px;
   margin-bottom: 15px;
 }
+
+// .contenedor{
+//   height: 40%;
+//   width: 40%;
+// }
+
+// .cab{
+//   width: 40%;
+// }
 
 #center{
   width: 80%;
