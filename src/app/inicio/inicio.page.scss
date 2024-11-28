@@ -22,6 +22,15 @@
   margin: 0;
 }
 
+.fut{
+  display: flex;
+  justify-content: center;
+}
+
+.der{
+  margin-right: 30px;
+}
+
 #container a {
   text-decoration: none;
 }
@@ -57,13 +66,9 @@ h1,h2,h3,h4,h5,h6{
 
 #top{
   text-align: center;
-  width: 60%;
+  width: 100%;
   margin: auto; 
-  background-color:#F7DC3C;
   padding: 1px;
-  border-radius: 20px;
-  border: 5px solid white;
-
 }
 
 h1{
@@ -77,14 +82,14 @@ h1{
 }
 
 h3{
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 15px;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 swiper-container{
@@ -100,6 +105,13 @@ swiper-slide{
   justify-content: center;
 }
 
+.lora-lol{
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 img{
   border-radius: 20px;
 }
@@ -107,20 +119,25 @@ img{
 ul li{
   align-self: center;
   color: black;
-
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .cent{
-  // text-align: center;
-  // display: flex;
-  // flex-direction: column;
-  background:#F7DC3C; 
-  width: 60%; 
+  width: 80%; 
   margin: auto;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 30px;
-  border: 5px solid white;
   
+}
+
+.cent li{
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
 }
 
 .box{
@@ -140,14 +157,18 @@ ul li{
   margin-bottom: 15px;
 }
 
-// .contenedor{
-//   height: 40%;
-//   width: 40%;
-// }
+.contenedor{
+  height: 40%;
+  width: 80%;
+  margin: auto;
+  background:#031b5c;
+}
 
-// .cab{
-//   width: 40%;
-// }
+.testbox{
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
 
 #center{
   width: 80%;

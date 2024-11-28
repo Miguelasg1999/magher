@@ -2,44 +2,34 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <ion-toolbar id="head">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- <ion-toolbar id="head">
       <ion-title routerLink="/inicio" style="color: white;">
         MAGHER
       </ion-title>
-      <ion-button *ngIf="(user$ | async) as user" (click)="logout()" slot="end" fill="clear" routerLink="/inicio">Cerrar sesión</ion-button>
-    </ion-toolbar>
+      
+    </ion-toolbar> -->
   </ion-header>
     
     
     <ion-content class="blnk"  [fullscreen]="true">
       <div class="fondo">
-        <ion-button *ngIf="!(user$ | async)" slot="end" fill="clear" routerLink="/home">Iniciar sesión</ion-button> 
-        <ion-button *ngIf="!(user$ | async)" slot="end" fill="clear" routerLink="/registro">Registrarse</ion-button>
-        <div style="width: 100%; padding: 5px; background-color: #030b38;">
-        <ion-button *ngIf="(user$ | async) as user" slot="end" fill="clear" routerLink="/listar-productos">Productos</ion-button>
-        <ion-button *ngIf="(user$ | async) as user" slot="end" fill="clear" routerLink="/producto">Agregar productos</ion-button>
-        </div>
       <br>
       <div id="top" class="title">
-        <h3>Panadería y Pastelería MAGHER</h3>
+        <img src="assets\img\1ermark.png" alt="">
+        <h3>M A G H E R</h3>
+        <img src="assets\img\2domark.png" alt="">
       </div>
       <br>
       <div>
         <h3 id="sub" class="title2">Tradición, experiencia y calidad por mas de 30 años</h3>
       </div>
     
-      <!--<swiper
-      (slideChange)="swiperSlideChanged($event)"
-      [loop]="true"
-      [pagination]="true">
-        <ng-template swiperSlide *ngFor="let image of images">
-          <img class="img1" [src]="image">
-        </ng-template>
-        <ng-template swiperSlide>Slide 2</ng-template>
-        <ng-template swiperSlide>Slide 3</ng-template>
-      </swiper>-->
-    
-      <h4 class="title3" style="color: white;">Somos proveedores lokasosc aa experienciados de panadería, pastelería y pedidos especiales, nuestros productos a continuación:</h4>
+      <h4 class="title3" style="color: white;">Somos proveedores experienciados de panadería, pastelería y pedidos especiales, nuestros productos a continuación:</h4>
+      <img src="assets\img\separador_fin.png  " alt="">
       <div class="box">
       <ul class="cent">
         <li>Diversidad en pan</li>
@@ -50,18 +40,34 @@
         <li>Empanadas</li>
       </ul>
     </div>
-      
-    </div>
+    <img src="assets\img\separador_fin2.png  " alt="">
+    <br>
+    <br>
 
-    <ion-header class="cab">
+
+    <div class="contenedor">
+    
       <ion-toolbar>
         <ion-title>Mapa</ion-title>
       </ion-toolbar>
-    </ion-header>
     
-    <ion-content class="contenedor">
+    
+    <ion-content>
       <!-- El div donde se mostrará el mapa de Google -->
       <div id="map" style="height: 100%;"></div>
     </ion-content>
-    
+    </div>
+    </div>
     </ion-content>
+
+    <ion-footer>
+      <ion-toolbar>
+        <div class="fut">
+        <ion-button class="der" *ngIf="!(user$ | async)" slot="end" fill="clear" routerLink="/home"><ion-icon size="large" name="key-outline"></ion-icon></ion-button> 
+        <ion-button *ngIf="!(user$ | async)" slot="end" fill="clear" routerLink="/registro"><ion-icon size="large" name="accessibility-outline"></ion-icon></ion-button>
+        <ion-button class="der" *ngIf="(user$ | async) as user" (click)="logout()" slot="end" fill="clear" routerLink="/inicio"><ion-icon size="large" name="exit-outline"></ion-icon></ion-button>
+        <ion-button class="der" *ngIf="(user$ | async) as user" slot="end" fill="clear" routerLink="/listar-productos"><ion-icon size="large" name="bag-outline"></ion-icon></ion-button>
+        <ion-button *ngIf="(user$ | async) as user" slot="end" fill="clear" routerLink="/producto"><ion-icon size="large" name="bag-add-outline"></ion-icon></ion-button>
+      </div>
+      </ion-toolbar>
+    </ion-footer>
